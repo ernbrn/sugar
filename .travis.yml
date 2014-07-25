@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.0.0
+cache: bundler
+before_script:
+  - psql -c 'create database sugar_test;' -U postgres
+  - bundle exec rake db:migrate db:test:prepare
+
+addons:
+  code_climate:
+    repo_token: 55f9e73b2835c24c5fda90893a5ee52947b0f5a7894a41c179e7778ad2ce2a5c
