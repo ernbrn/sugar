@@ -10,6 +10,7 @@
 * Name your branch after a small feature you'll be adding. 
 * Write code.
 * Test it out.
+* Make a commit
 * Run git fetch upstream and then git merge upstream/master in your branch. This merges the main copy with yours.
 * Test again.
 * Push your branch to your repo.
