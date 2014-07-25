@@ -3,7 +3,7 @@ rvm:
 - 2.0.0
 cache: bundler
 before_script:
-  - psql -c 'create database cats_test;' -U postgres
+  - psql -c 'create database sugar_test;' -U postgres
   - bundle exec rake db:migrate db:test:prepare
 
 addons:
