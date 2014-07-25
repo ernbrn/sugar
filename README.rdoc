@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+===Steps to Start Making Some Sweet Code
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Fork the project.
+* Clone your copy to your computer.
+*Add the main repo as a remote by putting this in your command line:
+  git remote add upstream https://github.com/ernbrn/sugar
+* Create a new branch to start coding on -- don't just start writing code on master.
+* Name your branch after a small feature you'll be adding. 
+* Write code.
+* Test it out.
+* Run git fetch upstream and then git merge upstream/master in your branch. This merges the main copy with yours.
+* Test again.
+* Push your branch to your repo.
+* Make a pull request! Do features in small batches and pull often!
