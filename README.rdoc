@@ -4,7 +4,7 @@
 
 * Fork the project.
 * Clone your copy to your computer.
-*Add the main repo as a remote by putting this in your command line:
+* Add the main repo as a remote by putting this in your command line:
   git remote add upstream https://github.com/ernbrn/sugar
 * Create a new branch to start coding on -- don't just start writing code on master.
 * Name your branch after a small feature you'll be adding. 
