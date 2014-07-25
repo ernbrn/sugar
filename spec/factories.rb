@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :student do
-    sequence(:name) { |n| "Name #{n}" }
-    email "Email"
+    name "Name"
+    email "Email@email.com"
     blurb "Blurb"
     bio "Bio"
     password "password"
