@@ -11,7 +11,10 @@
 * Write code.
 * Test it out.
 * Make a commit
-* Run git fetch upstream and then git merge upstream/master in your branch. This merges the main copy with yours.
+* Run: 
+   git fetch upstream 
+followed by: 
+   git merge upstream/master in your branch. This merges the main copy with yours.
 * Test again.
 * Push your branch to your repo.
 * Make a pull request! Do features in small batches and pull often!
