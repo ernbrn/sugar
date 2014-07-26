@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
+# Rails-
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -60,3 +62,5 @@ gem 'dragonfly'
 gem 'rabl'
 gem 'oj'
 gem 'rmagick', '2.13.2'
+
+gem 'rails-assets-backbone'
