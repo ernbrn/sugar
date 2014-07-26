@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
 
   def index
     @students = Student.all
-    respond_with @students, only: [:name, :email, :bio, :github, :linkdin]
+    respond_with @students
   end
 
   def show

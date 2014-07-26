@@ -1,5 +1,4 @@
 class ApiController < ApplicationController
-  protect_from_forgery with :null_session
   before_filter :authenticate_student_from_token!
   # This is Devise's authentication
   before_filter :authenticate_student!
