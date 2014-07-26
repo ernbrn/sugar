@@ -1,2 +1,2 @@
 collection @semesters
-attributes :id, :season
+attributes :season, :year
