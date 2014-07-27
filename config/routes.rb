@@ -5,6 +5,13 @@ Rails.application.routes.draw do
   resources :semesters, only: [:index, :show, :create, :update, :destroy, :years]
 
 
+ get 'years', to: 'semesters#years'
+ get 'focus', to: 'students#focus'
+ get 'ror', to: 'students#ror'
+ get 'fe', to: 'students#fe'
+
+
+
 
 
 
