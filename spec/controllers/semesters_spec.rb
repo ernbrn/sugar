@@ -1,15 +1,15 @@
 require 'rails_helper'
 #
 describe SemestersController do
-
-  it 'GET :years' do
-    semester = create(:semester)
-    get :years, id: semester.id, format: :json
-    expect(response).to be_success
-    data = JSON.parse(response.body)
-    expect(data.first).to have_key("year")
-    expect(data.first["year"].to eq semester.year)
-  end
+  #
+  # it 'GET :years' do
+  #   semester = create(:semester)
+  #   get :years, id: semester.id, format: :json
+  #   expect(response).to be_success
+  #   data = JSON.parse(response.body)
+  #   expect(data.first).to have_key("year")
+  #   expect(data.first["year"].to eq semester.year)
+  # end
 #
 #   it 'GET :index' do
 #     semester = create(:semesters)
