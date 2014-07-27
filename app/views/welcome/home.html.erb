@@ -1,54 +1,3 @@
-<!doctype html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Iron Yard Sugar</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-      <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-
-  </head>
-  <body>
-
-    <header>
-      <div class="header-container">
-        <div class="header-text-overlay">
-        <div class="header-text">
-          <h1>Durham, NC</h1>
-          <h2>Summer 2014 Cohort</h2>
-        </div>
-      </div>
-
-    </header>
-
-    <div class='container'>
-
-    <nav>
-      <ul>
-        <li>Filter</li>
-        <li>Edit My Profile</li>
-      </ul>
-    </nav>
-
-    <!-- Divs to store templates -->
-    <div id = "list"></div>
-    <div id = "homepage"></div>
-    <div id = "single"></div>
-
-<script type="text/template" class="user-template">
-Hello
-           <%%- name %>
- </script>
-
- <script type='text/x-handlebars-template' class="user-template2">
- Hello
-            {{ name}}
-  </script>
-
-
-
 <section id='home-template'>
   <section class="vine-choices">
       <div class="vine-selection-entry">
@@ -174,9 +123,3 @@ Hello
 
   </section>
 </section>
-</div>
-
-
-<script src="scripts/app.js"></script>
-</body>
-</html>
