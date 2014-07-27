@@ -2,7 +2,18 @@ Rails.application.routes.draw do
   devise_for :students
 
   resources :students, only: [:index, :show, :create, :update, :destroy]
-  resources :semesters, only: [:index, :show, :create, :update, :destroy]
+  resources :semesters, only: [:index, :show, :create, :update, :destroy, :years]
+
+
+ get 'years', to: 'semesters#years'
+ get 'focus', to: 'students#focus'
+ get 'ror', to: 'students#ror'
+ get 'fe', to: 'students#fe'
+
+
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -8,6 +8,11 @@ class SemestersController < ApplicationController
     respond_with @semesters
   end
 
+  def years
+    @years = Semester.all
+    respond_with @years, only: [:year]
+  end
+
   def show
     respond_with @semester
   end
