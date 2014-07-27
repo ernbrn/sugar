@@ -1,5 +1,7 @@
 FactoryGirl.define do
-  factory :semesters do
+  factory :semester do
     season "season"
+    year "year"
   end
+
 end

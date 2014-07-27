@@ -1,4 +1,52 @@
 == README
+=== API doc
+
+===Sign in
+GET students/signin
+params: student[email], student[password]
+Response: id, name, email, authentication token
+
+===Student
+GET students
+Response: all students
+
+GET student
+params: student[id]
+Response: student
+
+
+PATCH student
+params: student[params]
+Response: student
+
+DESTROY student
+params: student[id]
+Response: sudent
+
+GET signup
+params: student[email], student[password]
+Response: id, name, email, authentication token
+
+===Semester
+GET semesters
+Response: all semesters
+
+GET semester
+params: semester[id] -- make this season?
+Response: semester
+
+POST semester
+params: semester[year] semester[season]
+Response: semester
+
+PATCH semester
+params: semester[params]
+Response: semester
+
+DESTROY semester
+params: semester[id] -- season?
+Response: season
+
 
 
 ===Steps to Start Making Some Sweet Code

@@ -1,7 +1,7 @@
-# require 'rails_helper'
+require 'rails_helper'
 #
-# describe SemestersController do
-#
+describe SemestersController do
+
 #   it 'GET :index' do
 #     semester = create(:semesters)
 #     get :index, format: :json
@@ -54,4 +54,4 @@
 #     end
 #
 #
-# end
+end
