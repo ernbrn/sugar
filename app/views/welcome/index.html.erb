@@ -6,20 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Iron Yard Sugar</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
   </head>
   <body>
 
@@ -47,6 +36,20 @@
     <div id = "homepage"></div>
     <div id = "single"></div>
 
+<script type="text/template" class="user-template">
+Hello
+           <%% userData[idx].student.name %>
+ </script>
 
+<script type="text/javascript">
+$.getJSON('/students.json').done(function(userData){
+    console.log(userData);
+    var userView = $('.user-template').html();
+      _.each(userData, function(student) {
+          $('.container').append(_.template(userView,userData));
+        })
+});
+
+</script>
 </body>
 </html>

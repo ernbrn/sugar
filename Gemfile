@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-
+gem 'bourbon'
+gem 'neat'
 gem 'byebug'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
@@ -13,10 +14,7 @@ gem 'pg'
 gem 'rabl'
 gem 'rails', '4.1.4'
 gem 'rails-assets-backbone'
-gem 'rails-assets-bourbon'
-gem 'rails-assets-handlebars'
 gem 'rails-assets-normalize.css'
-gem 'rails-assets-neat'
 gem 'rmagick', '2.13.2'
 gem 'rspec-rails', '~> 3.0.1', group: [:development, :test]
 gem 'sass-rails', '~> 4.0.3'
