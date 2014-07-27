@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
 
  get 'years', to: 'semesters#years'
+ get 'focus', to: 'students#focus'
+ get 'ror', to: 'students#ror'
+ get 'fe', to: 'students#fe'
+
 
 
 
