@@ -4,6 +4,7 @@
 ===Sign in
 GET students/signin
 params: student[email], student[password]
+
 Response: id, name, email, authentication token
 
 ===Student
