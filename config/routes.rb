@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :semesters, only: [:index, :show, :create, :update, :destroy, :years]
 
 
+ get 'years', to: 'semesters#years'
+
+
 
 
 
