@@ -13,6 +13,7 @@ gem 'pg'
 gem 'rabl'
 gem 'rails', '4.1.4'
 gem 'rails-assets-backbone'
+gem 'rails-assets-handlebars'
 gem 'rmagick', '2.13.2'
 gem 'rspec-rails', '~> 3.0.1', group: [:development, :test]
 gem 'sass-rails', '~> 4.0.3'
@@ -35,6 +36,3 @@ group :test do
   gem 'shoulda-matchers'
   gem "codeclimate-test-reporter"
 end
-
-
-
