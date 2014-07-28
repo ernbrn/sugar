@@ -7,17 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-ror = Cohort.create(season:"Summer", year: 2014, foucs: "Ruby on Rails" )
+ror = Cohort.create(season:"Summer", year: 2014, focus: "Ruby on Rails" )
 fe = Cohort.create(season:"Summer", year: 2014, focus: "Front End")
 
+
 Student.create(
-name:"Erin",
+name:"Erin Brown",
 email: "emberbrown@gmail.com",
 password:"12345678",
 cohort: ror,
+twitter: "@ernbrn",
 linkedin: "https://www.linkedin.com",
 github:"ernbrn",
-focus: "Ruby on Rails",
 bio:"Erin is a local Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
 display at Fullsteam, Parker and Otis, Pinhook, the Cave, Open Eye Cafe, Carrborro Music Fest among others.
 She keeps a running blog with her music and life (including her experience at The Iron Yard) which you can
@@ -28,10 +29,11 @@ challenge anyone to a friendly pun competition. Erin loves to program and is loo
 back-end engineer.")
 
 Student.create(
-name:"Andrew",
+name:"Andrew Hooge",
 email: "andrewhooge@pushactive.com",
 password:"12345678",
 cohort: ror,
+twitter: "@andrewhooge",
 github:"andrewhooge",
 linkedin: "https://www.linkedin.com",
 bio:"Andrew Hooge has a passion for fitness and
@@ -45,10 +47,11 @@ a passion for improving health outcomes with technology.")
 
 
 Student.create(
-name:"Dave",
+name:"Dave Seidman",
 email: "bullcitydave@gmail.com",
 password:"12345678",
 cohort: ror,
+twitter: "@bullcitydave",
 linkedin: "https://www.linkedin.com",
 github:"bullcitydave",
 bio:" Dave first learned to program in BASIC in the early 1980s. His proudest achievement on his Apple ][ Plus with 48K of RAM was a Mad Libs
@@ -60,3 +63,18 @@ in computer science. After leaving
 Duke he worked in IT consulting and assisted in the development of Remedy desk application. He has worked in IT service management at both Duke
 University and Cisco where he gained exposure to and proficiency in many scripting languages. Fun Fact: In 1999 Dave
 appeared on one of the very first airings of Who Wants To Be A Millionaire. Photo is of Dave sitting with Regis Philbin during a practice session.")
+
+Student.create(
+name:"Ami Gori",
+email: "amygori@gmail.com",
+password:"12345678",
+cohort: fe,
+twitter: "@amygori",
+linkedin: "https://www.linkedin.com",
+github:"amygori",
+bio:" Amy has a PhD in english and has had a long career in higher education. She taught writing during the web 1.0 days and realized how useful
+it would be to have web pages for her courses so she taught herself basic HTLM & CSS. When she left academia to focus on being a parent she started
+ taking classes with Girl Develop It!, which reignited her delight in coding. She’s hoping to super-charge her skills at The Iron Yard and redirect
+her professional energy.")
+
+
