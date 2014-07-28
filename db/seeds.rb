@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-ror = Cohort.create(season:"Summer", year: 2014, foucs: "Ruby on Rails" )
+ror = Cohort.create(season:"Summer", year: 2014, focus: "Ruby on Rails" )
 fe = Cohort.create(season:"Summer", year: 2014, focus: "Front End")
 
 Student.create(
@@ -17,7 +17,6 @@ password:"12345678",
 cohort: ror,
 linkedin: "https://www.linkedin.com",
 github:"ernbrn",
-focus: "Ruby on Rails",
 bio:"Erin is a local Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
 display at Fullsteam, Parker and Otis, Pinhook, the Cave, Open Eye Cafe, Carrborro Music Fest among others.
 She keeps a running blog with her music and life (including her experience at The Iron Yard) which you can

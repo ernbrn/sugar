@@ -11,29 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20140727172049) do
-=======
 ActiveRecord::Schema.define(version: 20140728171840) do
->>>>>>> upstream/master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-  create_table "semesters", force: true do |t|
-    t.string   "season"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "year"
-=======
   create_table "cohorts", force: true do |t|
     t.string   "focus"
     t.string   "season"
     t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
->>>>>>> upstream/master
   end
 
   create_table "students", force: true do |t|
