@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-gem 'bourbon'
 gem 'neat'
 gem 'byebug'
 gem 'coffee-rails', '~> 4.0.0'
