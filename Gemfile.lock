@@ -142,6 +142,7 @@ GEM
       sprockets-rails (~> 2.0)
     rails-assets-backbone (1.1.2)
       rails-assets-underscore (>= 1.5.0)
+    rails-assets-handlebars (1.3.0)
     rails-assets-normalize.css (3.0.1)
     rails-assets-underscore (1.6.0)
     railties (4.1.4)
@@ -246,6 +247,7 @@ DEPENDENCIES
   rabl
   rails (= 4.1.4)
   rails-assets-backbone
+  rails-assets-handlebars
   rails-assets-normalize.css
   rmagick (= 2.13.2)
   rspec-rails (~> 3.0.1)

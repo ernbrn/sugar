@@ -5,7 +5,7 @@ var ClassRosterView = Backbone.View.extend ({
     },
 
     render: function () {
-        // this.template = Handlebars.compile($('#student-list-template').html());
+        this.template = Handlebars.compile($('#student-list-template').html());
         var template = _.template($('#student-list-template').html());
         console.log(this.collection);
         console.log(this.collection.toJSON());
