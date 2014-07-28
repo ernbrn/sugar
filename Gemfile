@@ -33,7 +33,6 @@ group :test do
   gem 'simplecov', require: false
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem "codeclimate-test-reporter"
 end
