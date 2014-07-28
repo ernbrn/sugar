@@ -1,2 +1,3 @@
 collection @student, :object_root => false
-attributes :id, :name, :email, :bio, :github, :linkedin, :focus, :semester
+attributes :id, :name, :email, :github, :linkedin, :bio
+child(:cohort, :object_root => false) { attributes :year, :season, :focus   }

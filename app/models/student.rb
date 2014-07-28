@@ -1,7 +1,7 @@
 class Student < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  belongs_to :semester
+  belongs_to :cohort
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
