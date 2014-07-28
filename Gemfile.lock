@@ -33,6 +33,9 @@ GEM
       rake (>= 0.8.7)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
@@ -142,6 +145,7 @@ GEM
       sprockets-rails (~> 2.0)
     rails-assets-backbone (1.1.2)
       rails-assets-underscore (>= 1.5.0)
+    rails-assets-bourbon (4.0.2)
     rails-assets-normalize.css (3.0.1)
     rails-assets-underscore (1.6.0)
     railties (4.1.4)
@@ -228,6 +232,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  better_errors
   bourbon
   byebug
   capybara
@@ -246,6 +251,7 @@ DEPENDENCIES
   rabl
   rails (= 4.1.4)
   rails-assets-backbone
+  rails-assets-bourbon
   rails-assets-normalize.css
   rmagick (= 2.13.2)
   rspec-rails (~> 3.0.1)
