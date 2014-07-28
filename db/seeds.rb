@@ -10,6 +10,12 @@
 ror = Cohort.create(season:"Summer", year: 2014, focus: "Ruby on Rails" )
 fe = Cohort.create(season:"Summer", year: 2014, focus: "Front End")
 
+Student.create(
+    name:"Jessica",
+    email: "emberbrown@gmail.com",
+    password:"12345678",
+    admin: true
+    )
 
 Student.create(
 name:"Erin Brown",
