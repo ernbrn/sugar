@@ -7,8 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Student.create(name:"Erin", email: "emberbrown@gmail.com", password:"12345678", github:"ernbrn", bio:"Erin is a local
-Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
+ror = Cohort.create(season:"Summer", year: 2014, foucs: "Ruby on Rails" )
+fe = Cohort.create(season:"Summer", year: 2014, focus: "Front End")
+
+Student.create(
+name:"Erin",
+email: "emberbrown@gmail.com",
+password:"12345678",
+cohort: ror,
+linkedin: "https://www.linkedin.com",
+github:"ernbrn",
+focus: "Ruby on Rails",
+bio:"Erin is a local Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
 display at Fullsteam, Parker and Otis, Pinhook, the Cave, Open Eye Cafe, Carrborro Music Fest among others.
 She keeps a running blog with her music and life (including her experience at The Iron Yard) which you can
 check out at www.ern-brn.com. Erin’s also talented at making up words and she’s competed in two of Durham's
@@ -17,7 +27,14 @@ in not getting further in the competition this year. However, she is ready to �
 challenge anyone to a friendly pun competition. Erin loves to program and is looking forward to a creative career as a
 back-end engineer.")
 
-Student.create(name:"Andrew", email: "andrewhooge@pushactive.com", password:"12345678", github:"andrewhooge", bio:"Andrew Hooge has a passion for fitness and
+Student.create(
+name:"Andrew",
+email: "andrewhooge@pushactive.com",
+password:"12345678",
+cohort: ror,
+github:"andrewhooge",
+linkedin: "https://www.linkedin.com",
+bio:"Andrew Hooge has a passion for fitness and
 sport along with a curiosity for how to help people excel both physically and mentally. This passion and curiosity turned into a 15-year
 career as a strength and conditioning coach for olympic runners, skiers and collegiate and professional football players. In 2003 Andrew
 turned his passion into a book, FitSkiing. He purchased his first Mac in 1990 and began to understand the power of software as a freshman
@@ -27,7 +44,14 @@ a featured speaker at the Internet Summit and a presenter at the Southeast Ventu
 a passion for improving health outcomes with technology.")
 
 
-Student.create(name:"Dave", email: "bullcitydave@gmail.com", password:"12345678", github:"bullcitydave", bio:" Dave first learned to program in BASIC in the early 1980s. His proudest achievement on his Apple ][ Plus with 48K of RAM was a Mad Libs
+Student.create(
+name:"Dave",
+email: "bullcitydave@gmail.com",
+password:"12345678",
+cohort: ror,
+linkedin: "https://www.linkedin.com",
+github:"bullcitydave",
+bio:" Dave first learned to program in BASIC in the early 1980s. His proudest achievement on his Apple ][ Plus with 48K of RAM was a Mad Libs
 program. Dave came to Durham
 to attend Duke University where
 he graduated with a Bachelor’s of

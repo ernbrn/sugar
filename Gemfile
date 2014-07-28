@@ -27,6 +27,7 @@ group :development do
   gem 'annotate'
   gem 'guard-rspec', require: false
   gem 'spring'
+  gem 'rails-assets-bourbon'
   gem "better_errors"
 end
 

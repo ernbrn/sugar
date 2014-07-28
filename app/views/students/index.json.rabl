@@ -1,2 +1,3 @@
 collection @students, :object_root => false
-attributes :id, :name, :email, :bio, :github, :linkedin, :focus, :semester
+attributes :id, :name, :email, :github, :linkedin, :bio, :cohort
+
