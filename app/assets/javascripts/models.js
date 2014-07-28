@@ -7,3 +7,5 @@ var ClassRoster = Backbone.Collection.extend ({
       this.url = 'students/';
     }
 });
+
+var classRoster = new ClassRoster();

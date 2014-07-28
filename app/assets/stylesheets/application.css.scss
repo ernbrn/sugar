@@ -193,11 +193,38 @@ border-top: 3px solid #aaa;
   }
 }
 
+section.login-container {
+  @extend .student-list;
+
+  #login-splash {
+    @include span-columns(6);
+    font-size: 3.5em;
+  }
+  #login-form {
+    @include span-columns(6);
+    p {
+      font-size: 1.5em;
+    }
+    input {
+      @include button(shiny, #000);
+      color: whitesmoke;
+      margin: 12.5px 37.5px 12.5px 37.5px;
+      width: 150px;
+      font-family: $primary-font;
+      font-size: 3.0em;
+    }
+  }
+
+}
 
 
 
 
 
+#list-template
+{
+  display: none;
+}
 
 
 

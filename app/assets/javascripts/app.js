@@ -41,6 +41,8 @@ $(function () {
 		$('.container').load($('.home-template').html());
 
 
+
+
 });
 
 
