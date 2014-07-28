@@ -132,8 +132,8 @@ header {
           img.student-photo-small
           {
               @include size(125px 125px);
-              border-radius:30px;
-              border: 10px solid $front-end;
+              border-radius:62.5px;
+              border: 6px solid $front-end;
           }
 
           .student-name
@@ -202,16 +202,37 @@ section.login-container {
   }
   #login-form {
     @include span-columns(6);
+
     p {
+      @include shift(1);
+      @include span-columns(2 of 6);
       font-size: 1.5em;
     }
     input {
-      @include button(shiny, #000);
+      color: #000;
+      margin: 12.5px;
+      width: 175px;
+      font-family: $primary-font;
+      font-size: 1.3em;
+      float:left;
+    }
+    dt {
+      clear:left;
+    }
+    .form-entry {
+      margin-top:20px;
+    }
+    #login-button, #reset {
+      @include button(shiny, #666);
       color: whitesmoke;
-      margin: 12.5px 37.5px 12.5px 37.5px;
+      margin: 12.5px 30px 12.5px 30px;
       width: 150px;
       font-family: $primary-font;
-      font-size: 3.0em;
+      font-size: 1.5em;
+      float:left
+    }
+    #login-button {
+      clear:left;
     }
   }
 
@@ -221,13 +242,16 @@ section.login-container {
 
 
 
-#list-template
+#student-list-template
 {
   display: none;
 }
 
 
-
+.notice, .alert
+{
+  margin: 0;
+}
 
 
 
