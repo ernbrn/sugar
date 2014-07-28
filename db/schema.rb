@@ -11,18 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140728133307) do
+ActiveRecord::Schema.define(version: 20140727172049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "cohorts", force: true do |t|
-    t.string   "focus"
-    t.string   "season"
-    t.integer  "year"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "semesters", force: true do |t|
     t.string   "season"
