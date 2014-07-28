@@ -2,6 +2,7 @@
 @import 'neat';
 
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
 
 
  //
@@ -24,13 +25,17 @@
 * { @include box-sizing(border-box); }
 
 $page-width        :  em(970);
+
 $large-avatar      :  125px;
+
 $primary-font      :  'Bitter', serif;
+$logo-font         :  'Comfortaa', Arial, "MS Trebuchet", sans-serif;
 
 $max-width: em(970);
 
 $front-end          : #ceae2c;
 $rails              : #a02121;
+
 
 
 body {
@@ -48,12 +53,27 @@ header {
     background: url('http://i.imgur.com/CGkLSQN.jpg')   no-repeat center fixed ;
     background-size: cover;
     position:relative;
+
+    .sweet-logo {
+      position: absolute;
+      left: 0px;
+      top: -30px;
+      font-size: 5em;
+      color: blue;
+      margin: 0;
+      background: white;
+      opacity: .6;
+      padding: 15px;
+      font-family: $logo-font;
+    }
+
     .header-container {
       top: 245px;
       left: 50%;
       width: $max-width;
       position:absolute;
       height: 200px;
+
       .header-text-overlay {
         position: absolute;
         top: 0;
@@ -64,6 +84,7 @@ header {
         width: ($max-width/2);
         padding: 30px;
       }
+
       .header-text {
 
         h1 {
@@ -195,6 +216,7 @@ border-top: 3px solid #aaa;
 
 section.login-container {
   @extend .student-list;
+  height: 300px;
 
   #login-splash {
     @include span-columns(6);
@@ -254,7 +276,10 @@ section.login-container {
 }
 
 
-
+h3 {
+  margin: 0;
+  text-align: center;
+}
 
 ////////////////
 
