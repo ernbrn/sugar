@@ -15,8 +15,9 @@ name:"Erin",
 email: "emberbrown@gmail.com",
 password:"12345678",
 cohort: ror,
-linkedin: "emberbrown@gmailcom",
-github:"ernbrn", focus: "Ruby on Rails",
+linkedin: "https://www.linkedin.com",
+github:"ernbrn",
+focus: "Ruby on Rails",
 bio:"Erin is a local Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
 display at Fullsteam, Parker and Otis, Pinhook, the Cave, Open Eye Cafe, Carrborro Music Fest among others.
 She keeps a running blog with her music and life (including her experience at The Iron Yard) which you can
@@ -30,7 +31,9 @@ Student.create(
 name:"Andrew",
 email: "andrewhooge@pushactive.com",
 password:"12345678",
-cohort: ror, github:"andrewhooge", 
+cohort: ror,
+github:"andrewhooge",
+linkedin: "https://www.linkedin.com",
 bio:"Andrew Hooge has a passion for fitness and
 sport along with a curiosity for how to help people excel both physically and mentally. This passion and curiosity turned into a 15-year
 career as a strength and conditioning coach for olympic runners, skiers and collegiate and professional football players. In 2003 Andrew
@@ -45,6 +48,8 @@ Student.create(
 name:"Dave",
 email: "bullcitydave@gmail.com",
 password:"12345678",
+cohort: ror,
+linkedin: "https://www.linkedin.com",
 github:"bullcitydave",
 bio:" Dave first learned to program in BASIC in the early 1980s. His proudest achievement on his Apple ][ Plus with 48K of RAM was a Mad Libs
 program. Dave came to Durham
