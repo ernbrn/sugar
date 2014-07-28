@@ -7,8 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Student.create(name:"Erin", email: "emberbrown@gmail.com", password:"12345678", github:"ernbrn", bio:"Erin is a local
-Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
+summer = Semester.create(season:"Summer", year: 2014)
+
+Student.create(name:"Erin", email: "emberbrown@gmail.com", password:"12345678", semester: summer, linkedin: "emberbrown@gmailcom", github:"ernbrn", focus: "Ruby on Rails",
+bio:"Erin is a local Durham musician. She’s played all over the Triangle and beyond. You may have seen her musical talents on
 display at Fullsteam, Parker and Otis, Pinhook, the Cave, Open Eye Cafe, Carrborro Music Fest among others.
 She keeps a running blog with her music and life (including her experience at The Iron Yard) which you can
 check out at www.ern-brn.com. Erin’s also talented at making up words and she’s competed in two of Durham's
