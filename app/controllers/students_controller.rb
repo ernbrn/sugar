@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+
   respond_to :json
   before_action :find_student, only: [:show, :update, :destroy]
 
