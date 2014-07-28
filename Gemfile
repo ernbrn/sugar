@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-gem 'bourbon'
 gem 'neat'
 gem 'byebug'
 gem 'coffee-rails', '~> 4.0.0'
@@ -28,6 +27,7 @@ group :development do
   gem 'annotate'
   gem 'guard-rspec', require: false
   gem 'spring'
+  gem "better_errors"
 end
 
 group :test do
