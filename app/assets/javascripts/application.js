@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require models
+//= require views
+//= require router
+//= require app
