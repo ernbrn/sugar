@@ -29,7 +29,6 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(student_params)
-    @student.save
     respond_with @student
   end
 
