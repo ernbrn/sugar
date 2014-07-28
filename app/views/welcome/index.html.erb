@@ -11,44 +11,65 @@
       <%= stylesheet_link_tag    'application', media: 'all' %>
       <%= javascript_include_tag 'application' %>
 
+
+
+
   </head>
+
+
   <body>
 
     <header>
+      <p class="sweet-logo">Sugar</p>
       <div class="header-container">
         <div class="header-text-overlay">
-        <div class="header-text">
-          <h1>Durham, NC</h1>
-          <h2>Summer 2014 Cohort</h2>
-        </div>
+          <div class="header-text">
+            <h1>Durham, NC</h1>
+            <h2>Summer 2014 Cohort</h2>
+          </div>
       </div>
 
     </header>
 
     <div class='container'>
 
-    <nav>
-      <ul>
-        <li>Filter</li>
-        <li>Edit My Profile</li>
-      </ul>
-    </nav>
 
 
-<script type="text/template" class="user-template">
-Hello
-           <%%- name %>
- </script>
+<!--
+// <script type="text/template" class="user-template">
+// Hello
+//            <%%- name %>
+//  </script>
+//
+//  <script type='text/x-handlebars-template' class="user-template2">
+//  Hello
+//             {{ name}}
+//   </script>
+ -->
 
- <script type='text/x-handlebars-template' class="user-template2">
- Hello
-            {{ name}}
-  </script>
+
+  <section class="login-container">
+    <div id="login-splash">
+      <h3>Sweet slogan goes here</h3>
+    </div>
+    <div id="login-form">
+      <form name="login">
+        <dt><p>Username</p><input class="form-entry" type="text" name="username"/></dt>
+        <dt><p>Password</p><input class="form-entry" type="password" name="password"></dt>
+        <a href="#/roster"><input id="login-button" type="button" value="Login"/></a>
+        <input type="reset" id="reset" value="Cancel"/>
+      </form>
+    </div>
+  </section>
 
 
-
-
-<section id='home-template'>
+<section id='student-list-template'>
+  <nav>
+    <ul>
+      <li>Filter</li>
+      <li>Edit My Profile</li>
+    </ul>
+  </nav>
   <section class="student-list">
       <div class="student-entry">
         <a href="#/">
@@ -169,13 +190,9 @@ Hello
           <div class="course">Rails</div>
         </a>
       </div>
-
-
   </section>
 </section>
 </div>
 
-
-<script src="scripts/app.js"></script>
 </body>
 </html>
