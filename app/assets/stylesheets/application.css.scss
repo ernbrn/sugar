@@ -56,10 +56,13 @@ header {
 
     .sweet-logo {
       position: absolute;
-      left: 20px;
-      top: 20px;
-      font-size:6em;
-      color:blue;
+      left: 0;
+      top: -20px;
+      font-size: 6em;
+      color: blue;
+      margin: 0;
+      opacity: .5;
+      background: white;
       font-family: $logo-font
     }
 
