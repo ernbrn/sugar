@@ -79,7 +79,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: sugar_production
-  username: sugar
-  password: <%= ENV['SUGAR_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: http://sugar-yard.herokuapp.com/
+
+
+
