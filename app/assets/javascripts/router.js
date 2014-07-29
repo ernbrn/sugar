@@ -25,9 +25,20 @@ app_router.on('route:showRoster', function() {
     console.log('Presenting class roster');
     classRoster.fetch().done(function(){
     console.log('Roster fetched', classRoster);
+
+      classRoster.each(function(student){
+         var gh = (student.get('github'));
+var ghUserURL = 'https://api.github.com/users/' + student.get('name') + '?' + ghToken;
+
+         student.set('avatar', $.getJSON(ghUserURL).done(function(userData){
+           console.log(student);
+           return userData.avatar_url;
+         }));
+
         $('.container').html(classRosterView.render().$el);
       });
     });
+  });
 
 
 app_router.on('route:getStudent', function(id) {
