@@ -85,14 +85,36 @@
     </ul>
   </nav>
   <section class="student-page">
-      <div class="student-entry">
 
-          <img class="{{avatar}}">
-          <div class="student-name">{{name}}</div>
-          <div class="course">{{course}}</div>
-
+      <div class="student-header">
+        <h1>{{name}}</h1>
       </div>
-  </section>
+
+      <div class="main-info">
+        <img id = "student-photo-large" src="{{avatar}}">
+        <aside>
+          <p class="course-large">{{cohort.focus}}</p>
+          <p class="email">{{email}}</p>
+
+            <nav class="social-media">
+              <ul class = "social-list">
+                <li class="social-icon" id="github">G</li>
+                <li class="social-icon" id="linkedin">L</li>
+                <li class="social-icon" id="twitter">T</li>
+              </ul>
+            </nav>
+
+        </aside>
+      </div>
+
+
+
+      <section class="bio">{{bio}}</section>
+
+
+
+      </section>
+  </div>
   </script>
 </body>
 </html>
