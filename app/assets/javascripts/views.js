@@ -53,6 +53,6 @@ Handlebars.registerHelper('ghAvatar', function (name){
   console.log(ghUserURL);
   $.getJSON(ghUserURL).done(function(userData){
     console.log(userData.avatar_url);
-    // return userData.avatar_url.slice(0,-1);
+    return new Handlebars.SafeString(userData.avatar_url);
   });
 })
