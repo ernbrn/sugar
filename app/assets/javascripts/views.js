@@ -5,14 +5,13 @@ var ClassRosterView = Backbone.View.extend ({
     },
 
     render: function () {
-        var template = Handlebars.compile($('#student-list-template').html());
-        console.log(this.collection);
+        this.template = Handlebars.compile($('#student-list-template').html());
         console.log(this.collection.toJSON());
-        var rendered = template({classRoster: this.collection.toJSON()});
-
+        var rendered = this.template({classRoster: this.collection.toJSON()});
         this.$el.html(rendered);
-        console.log('Collection for rendered to page');
+        console.log(classRoster);
         return this;
+
 }
 });
 
@@ -27,16 +26,14 @@ var StudentSingleView = Backbone.View.extend({
     initialize: function(){
         console.log('Initializing single student view');
 
-        $('#single').load("single.html");
-        $('#list').load("list.html");
-
 
       },
 
     render: function(model){
-        // this.template = Handlebars.compile($('#student-single-template').html());
-        // this.$el.html(this.template(model.toJSON()));
-        // return this;
+        console.log(model);
+        this.template = Handlebars.compile($('#student-single-template').html());
+        this.$el.html(this.template(model.toJSON()));
+        return this;
     }
 });
 

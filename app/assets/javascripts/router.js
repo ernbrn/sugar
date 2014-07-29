@@ -1,7 +1,7 @@
 var AppRouter = Backbone.Router.extend({
     routes: {
              'student-summary/:id'     :     'getStudentSummary',
-             'student/:id'    :     'getStudent',
+             'roster/:id'    :     'getStudent',
              'roster'    : 'showRoster'
 
         }
@@ -9,6 +9,11 @@ var AppRouter = Backbone.Router.extend({
 
     // Initiate the router
 var app_router = new AppRouter;
+
+var classRoster;
+
+var classRosterView;
+
 
 app_router.on('route:showRoster', function() {
     var classRoster = new ClassRoster();
@@ -19,18 +24,21 @@ app_router.on('route:showRoster', function() {
 
     console.log('Presenting class roster');
     classRoster.fetch().done(function(){
-    console.log('Roster fetched');
+    console.log('Roster fetched', classRoster);
         $('.container').html(classRosterView.render().$el);
       });
     });
 
 
-    app_router.on('route:getStudent', function(postId) {
-      var studentSingleView = new StudentSingleView;
-        console.log('Presenting student ' + postId);
-        var m = studentCollection.get(postId);
-        $('.container').html(studentSingleView.render(m).$el);
-    })
+app_router.on('route:getStudent', function(id) {
+  classRoster.fetch().done(function(){
+
+  var studentSingleView = new StudentSingleView;
+    console.log('Presenting student ' + id);
+    var m = classRoster.get(id);
+    $('.container').html(studentSingleView.render(m).$el);
+})
+});
 
 
 
