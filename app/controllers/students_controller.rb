@@ -9,20 +9,17 @@ class StudentsController < ApplicationController
     respond_with @students
   end
 
+
+
+
+
+
   def focus
     @focus = Student.all
     respond_with @focus, only: [:focus]
   end
 
-  def ror
-    @ror = Student.where(:focus => "Ruby on Rails")
-    respond_with @ror
-  end
 
-  def fe
-    @fe = Student.where(:focus => "Front End")
-    respond_with @fe
-  end
 
   def show
     respond_with @student, only: [:name, :email, :bio, :github, :linkdin]

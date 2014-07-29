@@ -1,36 +1,39 @@
 class CohortsController < ApplicationController
-  respond_to :json
   before_action :find_cohort, only: [:show, :update, :destroy]
 
 
   def index
     @cohorts = Cohort.all
-    respond_with @cohorts
   end
 
-  def years
-    @years = Cohort.all
-    respond_with @years, only: [:year]
+  def ruby
+    @ror = Cohort.first
+    @ror
+  end
+
+  def fe
+    @fe = Cohort.second
+   @fe
   end
 
   def show
-    respond_with @cohort
+   @cohort
   end
 
   def create
     @cohort = Cohort.new(cohort_params)
     @cohort.save
-    respond_with @cohort
+    @cohort
   end
 
   def update
     @cohort.update(cohort_params)
-    respond_with @cohort
+    @cohort
   end
 
   def destroy
     @cohort.delete
-    respond_with @cohort
+   @cohort
   end
 
   private

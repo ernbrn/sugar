@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require underscore
 //= require backbone
 //= require handlebars
@@ -20,3 +21,5 @@
 //= require views
 //= require router
 //= require app
+
+$(function(){ $(document).foundation(); });

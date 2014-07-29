@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   resources :cohorts, only: [:index, :show, :create, :update, :destroy, :years]
 
 
- get 'years', to: 'cohorts#years'
- get 'focus', to: 'students#focus'
+ get 'ruby', to: 'cohorts#ruby'
+  get 'fe', to: 'cohorts#fe'
+
+  get 'focus', to: 'students#focus'
  get 'ror', to: 'students#ror'
  get 'fe', to: 'students#fe'
 
