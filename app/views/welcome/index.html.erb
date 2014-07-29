@@ -80,7 +80,7 @@
 <script id="student-single-template" type="text/x-handlebars-template">
   <nav>
     <ul>
-      <li>Close</li>
+      <li><a href="/#/roster">Close</a></li>
       <li>Edit My Profile</li>
     </ul>
   </nav>
@@ -94,15 +94,22 @@
         <img id = "student-photo-large" src="{{avatar}}">
         <aside>
           <p class="course-large">{{cohort.focus}}</p>
-          <p class="email">{{email}}</p>
-
             <nav class="social-media">
               <ul class = "social-list">
-                <li class="social-icon" id="github">G</li>
-                <li class="social-icon" id="linkedin">L</li>
-                <li class="social-icon" id="twitter">T</li>
+                <a href="https://github.com/{{github}}/">
+                <li class="social-icon" id="github">
+                  <i class="fa fa-github-square fa-4x"></i>
+                </li>
+                </a>
+                <li class="social-icon" id="linkedin">
+                  <i class="fa fa-linkedin-square fa-4x"></i>
+                </li>
+                <li class="social-icon" id="twitter">
+                  <i class="fa fa-twitter fa-4x"></i>
+                </li>
               </ul>
             </nav>
+          <p class="email">{{email}}</p>
 
         </aside>
       </div>
