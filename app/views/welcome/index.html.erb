@@ -57,12 +57,12 @@
 
   <section class="student-list">
     {{#each classRoster}}
-      <div class="student-entry" id={{id}}>
+      <div class="student-entry id={{id}}">
 
         <a href="#/roster/{{id}}">
-          <img class="student-photo-small" src="{{avatar}}">
+          <img src="{{ghAvatar github}}" class="student-photo-small {{addClass cohort.focus}}" >
           <div class="student-name">{{name}}</div>
-          <div class="course">{{course}}</div>
+          <div class="course">{{cohort.focus}}</div>
         </a>
       </div>
       {{/each}}

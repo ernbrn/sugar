@@ -170,9 +170,9 @@ header {
 
     }
     // just for demo purposes...rails color
-    div.student-entry:nth-child(4n+1) img.student-photo-small
+    .ruby
     {
-      border-color: $rails;
+      border-color: $rails !important;
     }
 
 

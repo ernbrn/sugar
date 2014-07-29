@@ -9,7 +9,8 @@ var Student = Backbone.Model.extend ({
 
 var ClassRoster = Backbone.Collection.extend ({
     model: Student,
-    url: 'students/'
+    url: 'students/',
+    comparator: name
     });
 
 var classRoster = new ClassRoster();
