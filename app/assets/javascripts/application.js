@@ -16,6 +16,7 @@
 //= require backbone
 //= require handlebars
 //= require models
+//= require ghtoken
 //= require views
 //= require router
 //= require app
