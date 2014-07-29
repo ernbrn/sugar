@@ -31,20 +31,6 @@
     <div class='container'>
 
 
-
-      <!--
-      // <script type="text/template" class="user-template">
-      // Hello
-      //            <%%- name %>
-      //  </script>
-      //
-      //  <script type='text/x-handlebars-template' class="user-template2">
-      //  Hello
-      //             {{ name}}
-      //   </script>
-       -->
-
-
   <section class="login-container">
     <div id="login-splash">
       <h3>Sweet slogan goes here</h3>
@@ -71,9 +57,9 @@
 
   <section class="student-list">
     {{#each classRoster}}
-      <div class="student-entry">
+      <div class="student-entry" id={{id}}>
 
-        <a href="#/">
+        <a href="#/roster/{{id}}">
           <img class="student-photo-small" src="{{avatar}}">
           <div class="student-name">{{name}}</div>
           <div class="course">{{course}}</div>
@@ -85,7 +71,13 @@
 
 </script>
 
-<section id='student-single-template'>
+
+
+
+
+
+</div>
+<script id="student-single-template" type="text/x-handlebars-template">
   <nav>
     <ul>
       <li>Close</li>
@@ -93,19 +85,36 @@
     </ul>
   </nav>
   <section class="student-page">
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Rails</div>
-        </a>
+
+      <div class="student-header">
+        <h1>{{name}}</h1>
       </div>
-  </section>
+
+      <div class="main-info">
+        <img id = "student-photo-large" src="{{avatar}}">
+        <aside>
+          <p class="course-large">{{cohort.focus}}</p>
+          <p class="email">{{email}}</p>
+
+            <nav class="social-media">
+              <ul class = "social-list">
+                <li class="social-icon" id="github">G</li>
+                <li class="social-icon" id="linkedin">L</li>
+                <li class="social-icon" id="twitter">T</li>
+              </ul>
+            </nav>
+
+        </aside>
+      </div>
 
 
 
+      <section class="bio">{{bio}}</section>
 
-</div>
 
+
+      </section>
+  </div>
+  </script>
 </body>
 </html>

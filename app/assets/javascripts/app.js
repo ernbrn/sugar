@@ -12,9 +12,9 @@ var HomeView = Backbone.View.extend ({
 				return this;
 			},
 
+
 		events: {
-			// 'click body': 'hoverItem',
-			// 'click .container' : 'hoverItem',
+
 		'hover .vine-selecton-entry' : 'hoverItem'
 
 		},
