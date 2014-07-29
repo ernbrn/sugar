@@ -14,36 +14,17 @@
   </head>
 
 
-  <body>
+<body>
 
-    <!-- <header>
-      <p class="sweet-logo">Sugar</p>
-      <div class="header-container">
-        <div class="header-text-overlay">
-          <div class="header-text">
-            <h1>Durham, NC</h1>
-            <h2>Summer 2014 Cohort</h2>
-          </div>
-      </div>
-      </div>
-    </header> -->
-
-    <div class='container'>
+  <div class='container'>
 
 
-  <section class="login-container">
-    <div id="login-splash">
-      <h3>Sweet slogan goes here</h3>
-    </div>
-    <div id="login-form">
-      <form name="login">
-        <dt><p>Username</p><input class="form-entry" type="text" name="username"/></dt>
-        <dt><p>Password</p><input class="form-entry" type="password" name="password"></dt>
-        <a href="#/roster"><input id="login-button" type="button" value="Login"/></a>
-        <input type="reset" id="reset" value="Cancel"/>
-      </form>
-    </div>
-  </section>
+    <section class="login-container">
+        <a href="#/roster"><input class="cohort-launch" type="button" value="Summer 2014 Cohort"/></a>
+    </section>
+  </div>
+</body>
+
 
 
 <script id="student-list-template" type="text/x-handlebars-template">
@@ -57,12 +38,12 @@
 
   <section class="student-list">
     {{#each classRoster}}
-      <div class="student-entry" id={{id}}>
+      <div class="student-entry id={{id}}">
 
         <a href="#/roster/{{id}}">
-          <img class="student-photo-small" src="{{avatar}}">
+          <img src="{{ghAvatar github}}" class="student-photo-small {{addClass cohort.focus}}" >
           <div class="student-name">{{name}}</div>
-          <div class="course">{{course}}</div>
+          <div class="course">{{cohort.focus}}</div>
         </a>
       </div>
       {{/each}}
@@ -76,11 +57,11 @@
 
 
 
-</div>
+
 <script id="student-single-template" type="text/x-handlebars-template">
   <nav>
     <ul>
-      <li>Close</li>
+      <li><a href="/#/roster">Close</a></li>
       <li>Edit My Profile</li>
     </ul>
   </nav>
@@ -94,15 +75,22 @@
         <img id = "student-photo-large" src="{{avatar}}">
         <aside>
           <p class="course-large">{{cohort.focus}}</p>
-          <p class="email">{{email}}</p>
-
             <nav class="social-media">
               <ul class = "social-list">
-                <li class="social-icon" id="github">G</li>
-                <li class="social-icon" id="linkedin">L</li>
-                <li class="social-icon" id="twitter">T</li>
+                <a href="https://github.com/{{github}}/">
+                <li class="social-icon" id="github">
+                  <i class="fa fa-github-square fa-4x"></i>
+                </li>
+                </a>
+                <li class="social-icon" id="linkedin">
+                  <i class="fa fa-linkedin-square fa-4x"></i>
+                </li>
+                <li class="social-icon" id="twitter">
+                  <i class="fa fa-twitter fa-4x"></i>
+                </li>
               </ul>
             </nav>
+          <a href="mailto:{{email}}"><p class="email">{{email}}</p></a>
 
         </aside>
       </div>
@@ -116,5 +104,5 @@
       </section>
   </div>
   </script>
-</body>
+
 </html>

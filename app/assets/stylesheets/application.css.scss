@@ -1,5 +1,6 @@
 @import 'bourbon';
 @import 'neat';
+@import 'font-awesome';
 
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
@@ -10,7 +11,7 @@
  // * listed below.
  // *
  // * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- // * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ // * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative pathul
  // *
  // * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  // * compiled file so the styles you add here take precedence over styles defined in any styles
@@ -170,9 +171,9 @@ header {
 
     }
     // just for demo purposes...rails color
-    div.student-entry:nth-child(4n+1) img.student-photo-small
+    .ruby
     {
-      border-color: $rails;
+      border-color: $rails !important;
     }
 
 
@@ -198,7 +199,7 @@ nav {
 
 margin: 20px 0px 15px 0;
 padding-top: 0px;
-border-top: 3px solid #aaa;
+
   li {
     list-style:none;
     margin-bottom: 12px;
@@ -284,6 +285,16 @@ section.login-container {
 }
 
 
+.cohort-launch {
+  @include button(shiny, $sugarblue);
+  color: whitesmoke;
+  margin: 12.5px 30px 12.5px 30px;
+  width: 300px;
+  font-family: $primary-font;
+  font-size: 1.5em;
+  float:left;
+  clear:left;
+}
 
 
 
@@ -325,6 +336,7 @@ section.student-page {
 
     h1 {
       font-size: 4.5em;
+      margin: 5px 0 25px 0;
     }
   }
 
@@ -342,13 +354,16 @@ section.student-page {
       p.course-large, p.email {
         font-size: 2.5em;
         margin: 0 30px 20px 30px;
+        text-align:center;
+      }
+      p.email {
+        font-size: 1.8em;
       }
 
       nav.social-media
       {
+        text-align:center;
         ul.social-list {
-          display:inline-block;
-          text-align:center;
           li.social-icon {
             display-type: none;
             float:left;
