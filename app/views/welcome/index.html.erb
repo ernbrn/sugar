@@ -11,15 +11,12 @@
 
     <%= javascript_include_tag 'application' %>
 
-
-
-
   </head>
 
 
   <body>
 
-    <header>
+    <!-- <header>
       <p class="sweet-logo">Sugar</p>
       <div class="header-container">
         <div class="header-text-overlay">
@@ -29,7 +26,7 @@
           </div>
       </div>
       </div>
-    </header>
+    </header> -->
 
     <div class='container'>
 
@@ -63,126 +60,39 @@
   </section>
 
 
-<section id='student-list-template'>
+<script id="student-list-template" type="text/x-handlebars-template">
   <nav>
     <ul>
       <li>Filter</li>
       <li>Edit My Profile</li>
     </ul>
   </nav>
+
+
   <section class="student-list">
+    {{#each classRoster}}
       <div class="student-entry">
+
         <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Rails</div>
+          <img class="student-photo-small" src="{{avatar}}">
+          <div class="student-name">{{name}}</div>
+          <div class="course">{{course}}</div>
         </a>
       </div>
+      {{/each}}
 
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
+  </section>
 
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
+</script>
 
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Rails</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Rails</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
-      <div class="student-entry">
-        <a href="#/">
-          <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
-          <div class="student-name">Dave Seidman</div>
-          <div class="course">Front End</div>
-        </a>
-      </div>
-
+<section id='student-single-template'>
+  <nav>
+    <ul>
+      <li>Close</li>
+      <li>Edit My Profile</li>
+    </ul>
+  </nav>
+  <section class="student-page">
       <div class="student-entry">
         <a href="#/">
           <img class="student-photo-small" src="http://i.imgur.com/s7mpWGj.jpg">
@@ -191,7 +101,10 @@
         </a>
       </div>
   </section>
-</section>
+
+
+
+
 </div>
 
 </body>

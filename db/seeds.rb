@@ -134,5 +134,3 @@ Student.create(
 it would be to have web pages for her courses so she taught herself basic HTLM & CSS. When she left academia to focus on being a parent she started
  taking classes with Girl Develop It!, which reignited her delight in coding. She’s hoping to super-charge her skills at The Iron Yard and redirect
 her professional energy.")
-
-

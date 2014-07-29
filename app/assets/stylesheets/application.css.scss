@@ -56,15 +56,14 @@ header {
 
     .sweet-logo {
       position: absolute;
-      left: 0px;
-      top: -30px;
-      font-size: 5em;
+      left: 0;
+      top: -20px;
+      font-size: 6em;
       color: blue;
       margin: 0;
+      opacity: .5;
       background: white;
-      opacity: .6;
-      padding: 15px;
-      font-family: $logo-font;
+      font-family: $logo-font
     }
 
     .header-container {
@@ -217,6 +216,7 @@ border-top: 3px solid #aaa;
 section.login-container {
   @extend .student-list;
   height: 300px;
+  max-width: $max-width;
 
   #login-splash {
     @include span-columns(6);
@@ -224,6 +224,15 @@ section.login-container {
   }
   #login-form {
     @include span-columns(6);
+
+    label {
+      float: left;
+      width:100px;
+    }
+
+    label[for=student_remember_me] {
+      width: 200px;
+    }
 
     p {
       @include shift(1);
@@ -233,7 +242,7 @@ section.login-container {
     input {
       color: #000;
       margin: 12.5px;
-      width: 175px;
+      width: 200px;
       font-family: $primary-font;
       font-size: 1.3em;
       float:left;
@@ -257,6 +266,9 @@ section.login-container {
       clear:left;
     }
   }
+  .sign-in-links {
+    clear: both;
+  }
 
 }
 
@@ -279,6 +291,7 @@ section.login-container {
 h3 {
   margin: 0;
   text-align: center;
+  font-size: 1.1em;
 }
 
 ////////////////
