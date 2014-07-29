@@ -14,36 +14,17 @@
   </head>
 
 
-  <body>
+<body>
 
-    <!-- <header>
-      <p class="sweet-logo">Sugar</p>
-      <div class="header-container">
-        <div class="header-text-overlay">
-          <div class="header-text">
-            <h1>Durham, NC</h1>
-            <h2>Summer 2014 Cohort</h2>
-          </div>
-      </div>
-      </div>
-    </header> -->
-
-    <div class='container'>
+  <div class='container'>
 
 
-  <section class="login-container">
-    <div id="login-splash">
-      <h3>Sweet slogan goes here</h3>
-    </div>
-    <div id="login-form">
-      <form name="login">
-        <dt><p>Username</p><input class="form-entry" type="text" name="username"/></dt>
-        <dt><p>Password</p><input class="form-entry" type="password" name="password"></dt>
-        <a href="#/roster"><input id="login-button" type="button" value="Login"/></a>
-        <input type="reset" id="reset" value="Cancel"/>
-      </form>
-    </div>
-  </section>
+    <section class="login-container">
+        <a href="#/roster"><input class="cohort-launch" type="button" value="Summer 2014 Cohort"/></a>
+    </section>
+  </div>
+</body>
+
 
 
 <script id="student-list-template" type="text/x-handlebars-template">
@@ -76,7 +57,7 @@
 
 
 
-</div>
+
 <script id="student-single-template" type="text/x-handlebars-template">
   <nav>
     <ul>
@@ -109,7 +90,7 @@
                 </li>
               </ul>
             </nav>
-          <p class="email">{{email}}</p>
+          <a href="mailto:{{email}}"><p class="email">{{email}}</p></a>
 
         </aside>
       </div>
@@ -123,5 +104,5 @@
       </section>
   </div>
   </script>
-</body>
+
 </html>

@@ -285,6 +285,16 @@ section.login-container {
 }
 
 
+.cohort-launch {
+  @include button(shiny, $sugarblue);
+  color: whitesmoke;
+  margin: 12.5px 30px 12.5px 30px;
+  width: 300px;
+  font-family: $primary-font;
+  font-size: 1.5em;
+  float:left;
+  clear:left;
+}
 
 
 
@@ -326,6 +336,7 @@ section.student-page {
 
     h1 {
       font-size: 4.5em;
+      margin: 5px 0 25px 0;
     }
   }
 
